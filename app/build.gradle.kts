@@ -61,4 +61,9 @@ dependencies {
 
     //https://github.com/google/gson
     implementation("com.google.code.gson:gson:2.10.1")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.3.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.3.0")
+    implementation ("com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0")
 }
