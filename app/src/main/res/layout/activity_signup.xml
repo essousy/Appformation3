@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".presentation.screens.signup.SignupActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/uiBackButton"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_transparent_theme"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                app:textAllCaps="true"
+                tools:fontFamily="@font/alata" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_user"
+            android:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edittext_theme"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/color_accent"
+            android:textColorHint="@color/hint_accent"
+            tools:fontFamily="@font/alata" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edittext_theme"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColor="@color/color_accent"
+            android:textColorHint="@color/hint_accent"
+            tools:fontFamily="@font/alata" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_theme"
+                android:gravity="center"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_accent"
+                android:textColorHint="@color/hint_accent"
+                tools:fontFamily="@font/alata" />
+
+            <Space
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_theme"
+                android:gravity="center"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_accent"
+                android:textColorHint="@color/hint_accent"
+                tools:fontFamily="@font/alata" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edittext_theme"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/color_accent"
+            android:textColorHint="@color/hint_accent"
+            tools:fontFamily="@font/alata" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edittext_theme"
+            android:gravity="center"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColor="@color/color_accent"
+            android:textColorHint="@color/hint_accent"
+            tools:fontFamily="@font/alata" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edittext_theme"
+            android:gravity="center"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:textColor="@color/color_accent"
+            android:textColorHint="@color/hint_accent"
+            tools:fontFamily="@font/alata" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uiSaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/button_white_theme"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>

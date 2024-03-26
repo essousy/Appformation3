@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".presentation.screens.home.HomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/black">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/alata"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_transparent_theme"
+            android:src="@drawable/ic_logout"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabBackground="@color/black_light"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextAppearance="@style/SelectedTabItem"
+        app:tabTextAppearance="@style/DefaultTabItem"
+        android:layout_height="@dimen/_40sdp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tous"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other categories"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/uiProductsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_product" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

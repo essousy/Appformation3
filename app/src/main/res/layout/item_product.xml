@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/uiImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:background="@color/purple_200"
+                app:riv_corner_radius_top_left="@dimen/_10sdp"
+                app:riv_corner_radius_top_right="@dimen/_10sdp"
+                app:riv_mutate_background="true" />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0.0 DH"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uiTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
