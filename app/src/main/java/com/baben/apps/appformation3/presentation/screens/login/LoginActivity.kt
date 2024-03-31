@@ -4,10 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.baben.apps.appformation3.core.bases.BaseActivities
+import com.baben.apps.appformation3.data.remote.retrofit.UserApi
 import com.baben.apps.appformation3.databinding.ActivityLoginBinding
 import com.baben.apps.appformation3.presentation.screens.home.HomeActivity
 import com.baben.apps.appformation3.presentation.screens.signup.SignupActivity
-
+import dagger.hilt.android.HiltAndroidApp
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+@HiltAndroidApp
 class LoginActivity : BaseActivities() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -17,6 +21,7 @@ class LoginActivity : BaseActivities() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupActions()
+
     }
 
     private fun setupActions() {
